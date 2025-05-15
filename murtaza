@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Murtaza Hassan | Software Engineer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Professional profile of Murtaza Hassan, Software Engineer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4285F4; /* Google blue */
+            --secondary-color: #34A853; /* Google green */
+            --accent-color: #EA4335; /* Google red */
+            --light-color: #f8f9fa;
+            --dark-color: #202124;
+        }
+        
+        body {
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.1);
+            background-color: white;
+            border-radius: 8px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 50px 0 30px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--accent-color);
+        }
+        
+        .profile-img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+        
+        nav {
+            background: var(--dark-color);
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-size: 1.05em;
+        }
+        
+        nav a:hover, nav a:focus {
+            background-color: var(--primary-color);
+        }
+        
+        section {
+            margin: 40px 0;
+            padding: 25px;
+            border-radius: 8px;
+        }
+        
+        section:nth-child(even) {
+            background-color: var(--light-color);
+        }
+        
+        h1 {
+            margin: 20px 0 10px;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        
+        h2 {
+            color: var(--dark-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .skill {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .project {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ddd;
+        }
+        
+        .project:last-child {
+            border-bottom: none;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 25px;
+        }
+        
+        .social-links a {
+            color: var(--dark-color);
+            font-size: 1.8em;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: var(--dark-color);
+            color: white;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://via.placeholder.com/180" alt="Murtaza Hassan" class="profile-img">
+            <h1>Murtaza Hassan</h1>
+            <p>Software Engineer | Full Stack Developer | Problem Solver</p>
+        </header>
+        
+        <nav>
+            <a href="#about"><i class="fas fa-user"></i> About</a>
+            <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+            <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+            <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Murtaza Hassan, a passionate Software Engineer with expertise in building robust and scalable applications. With a strong foundation in computer science principles and hands-on experience in modern web technologies, I specialize in creating efficient solutions to complex problems.</p>
+            <p>My approach combines technical excellence with clean code practices and attention to user experience. I'm committed to continuous learning and staying updated with the latest industry trends.</p>
+            <p>When I'm not coding, I enjoy contributing to open-source projects, mentoring junior developers, and exploring new technologies.</p>
+        </section>
+        
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <span class="skill">JavaScript</span>
+                <span class="skill">Python</span>
+                <span class="skill">Java</span>
+                <span class="skill">React</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">Express</span>
+                <span class="skill">Django</span>
+                <span class="skill">SQL</span>
+                <span class="skill">MongoDB</span>
+                <span class="skill">Docker</span>
+                <span class="skill">AWS</span>
+                <span class="skill">Git</span>
+                <span class="skill">CI/CD</span>
+                <span class="skill">REST APIs</span>
+                <span class="skill">GraphQL</span>
+                <span class="skill">Microservices</span>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="project">
+                <h3>Senior Software Engineer | Tech Solutions Inc.</h3>
+                <p><em>2020 - Present</em></p>
+                <ul>
+                    <li>Led development of a SaaS platform serving 50,000+ monthly active users</li>
+                    <li>Architected and implemented microservices using Node.js and React</li>
+                    <li>Optimized database queries reducing API response time by 40%</li>
+                    <li>Mentored 3 junior developers in best practices and code reviews</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <h3>Software Developer | InnovateSoft</h3>
+                <p><em>2017 - 2020</em></p>
+                <ul>
+                    <li>Developed RESTful APIs for mobile applications with Django</li>
+                    <li>Implemented automated testing reducing bugs in production by 30%</li>
+                    <li>Collaborated with UX team to improve customer satisfaction scores</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Notable Projects</h2>
+            
+            <div class="project">
+                <h3>E-Learning Platform</h3>
+                <p>Full-stack online learning system with video streaming, quizzes, and progress tracking. Built with MERN stack (MongoDB, Express, React, Node.js).</p>
+                <p><strong>Features:</strong> JWT authentication, payment integration, responsive design, admin dashboard</p>
+            </div>
+            
+            <div class="project">
+                <h3>Inventory Management System</h3>
+                <p>Enterprise solution for tracking inventory across multiple warehouses. Developed with Python/Django and React frontend.</p>
+                <p><strong>Features:</strong> Barcode scanning, real-time updates, reporting dashboard, role-based access</p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: murtaza.hassan@example.com</p>
+                <p><i class="fas fa-phone"></i> Phone: +92 300 1234567</p>
+                <p><i class="fas fa-map-marker-alt"></i> Location: Karachi, Pakistan</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/murtazahassan" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/murtazahassan" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/mhassan_dev" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://stackoverflow.com/users/murtazahassan" target="_blank" title="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2023 Murtaza Hassan. All rights reserved.</p>
+            <p><small>Last updated: November 2023</small></p>
+        </footer>
+    </div>
+</body>
+</html>
